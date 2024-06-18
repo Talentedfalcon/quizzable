@@ -1,0 +1,44 @@
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.background-container{
+    z-index: -100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue; */
+    background: linear-gradient(to top left,#202b31,#2b363d);
+}
+
+.background-container .circle{
+    left: 50%;
+    top: 10%;
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    background: linear-gradient(to bottom right,#202b31,#2b363d);
+    border-radius: 50px;
+    box-shadow: 0.008px 0.0008px 0.1px #1d2429;
+    transition: 2s;
+}
+
+.background-container .circle-center{
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    background: linear-gradient(to bottom right,#202b31,#2b363d);
+    border-radius: 50px;
+    box-shadow: 0.008px 0.0008px 0.1px #1d2429;
+    transition: all 2s, top 0.5s ease-in-out;
+}

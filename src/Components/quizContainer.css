@@ -1,0 +1,101 @@
+.quiz-main-container{
+    display: flex;
+    flex-flow: column;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.intro-text-container{
+    margin-top: 100px;
+    color:white;
+}
+
+.intro-text-container .main-text{
+    font-size: 3rem;
+}
+
+.intro-text-container .sub-text{
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.quiz-board{
+    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.quiz-board .question{
+    text-wrap: balance;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    width: 80vw;
+}
+
+.quiz-board .options{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.quiz-board .options .option{
+    text-wrap: nowrap;
+    font-size: 1.2rem;
+    border: solid white;
+    border-radius: 100px;
+    padding: 20px 0;
+    transition: 0.5s;
+}
+
+.quiz-board .options .option:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.score-card-base{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    border-radius: 100px;
+    border: white solid;
+    padding: 20px 40px;
+    background:linear-gradient(to bottom right,#000000,#2b363d);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    :nth-child(n){
+        margin:0;
+    }
+}
+
+.score-final{
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    align-self: center;
+    justify-self: center;
+    border-radius: 100px;
+    /* transform-origin: 50% 50%; */
+    /* transform: translate(30px,30px); */
+    transform: scale(2);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    :nth-child(n){
+        margin:0;
+    }
+}
+
+.remark-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 3px 3px 1px black;
+}
