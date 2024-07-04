@@ -50,4 +50,6 @@ export function nextCircleAnimation(className='circle'){
     },1000)
 }
 
+window.addEventListener('resize',circleAnimation);
+
 export default BgAnim;

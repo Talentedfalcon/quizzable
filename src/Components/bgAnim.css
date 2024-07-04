@@ -21,6 +21,7 @@
 
 .background-container .circle{
     left: 50%;
+    right: 50%;
     top: 10%;
     position: fixed;
     width: 1px;

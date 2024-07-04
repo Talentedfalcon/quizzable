@@ -99,3 +99,30 @@
     font-style: italic;
     text-shadow: 3px 3px 1px black;
 }
+
+@media only screen and (max-width: 425px) {
+    .quiz-board .question{
+        font-size: 1rem;
+    }
+    .quiz-board .options{
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .quiz-board .options .option{
+        text-wrap: wrap;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .score-card-base{
+        font-size: 1rem;
+        padding: 10px 24px;
+    }
+    .intro-text-container .main-text{
+        font-size: 1.5rem;
+    }
+    .intro-text-container .sub-text{
+        font-size: 0.7rem;
+    }
+}
