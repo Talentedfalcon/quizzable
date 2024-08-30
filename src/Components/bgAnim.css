@@ -11,19 +11,18 @@
 }
 
 .background-container{
+    display: flex;
+    justify-content: center;
     z-index: -100;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    /* background-color: blue; */
     background: linear-gradient(to top left,#202b31,#2b363d);
 }
 
 .background-container .circle{
-    left: 50%;
-    right: 50%;
-    top: 10%;
-    position: fixed;
+    margin-top: 50px;
+    transform-origin: 40%;
     width: 1px;
     height: 1px;
     background: linear-gradient(to bottom right,#202b31,#2b363d);
@@ -33,9 +32,8 @@
 }
 
 .background-container .circle-center{
-    left: 50%;
-    top: 50%;
-    position: fixed;
+    align-self: center;
+    transform-origin: 40% 40%;
     width: 1px;
     height: 1px;
     background: linear-gradient(to bottom right,#202b31,#2b363d);
